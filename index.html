@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resume of Mohd Viquaruddin Anas" />
+    <title>Mohd Viquaruddin Anas - Resume</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f5f7fb;
+        color: #111827;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background:
+          radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 32rem),
+          linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem clamp(1rem, 4vw, 2rem);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: blur(14px);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.1rem, 3vw, 1.7rem);
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0.25rem 0 0;
+        color: #475569;
+        font-size: 0.95rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.5rem;
+        padding: 0.65rem 1rem;
+        border-radius: 0.55rem;
+        border: 1px solid rgba(15, 23, 42, 0.14);
+        background: #111827;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.92rem;
+        white-space: nowrap;
+      }
+
+      .button.secondary {
+        background: #ffffff;
+        color: #111827;
+      }
+
+      main {
+        flex: 1;
+        padding: clamp(0.75rem, 2vw, 1.25rem);
+      }
+
+      .viewer {
+        width: min(100%, 980px);
+        height: calc(100vh - 7.2rem);
+        min-height: 34rem;
+        margin: 0 auto;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        border-radius: 0.75rem;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.14);
+      }
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 700px) {
+        header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .actions {
+          justify-content: flex-start;
+          width: 100%;
+        }
+
+        .button {
+          flex: 1;
+        }
+
+        .viewer {
+          height: calc(100vh - 10.5rem);
+          min-height: 28rem;
+          border-radius: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Mohd Viquaruddin Anas - Resume</h1>
+        <p>Full Stack Developer | MERN Stack | AI Workflow Enthusiast</p>
+      </div>
+      <div class="actions">
+        <a class="button secondary" href="./MohdViquaruddinAnas-Resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="button" href="./MohdViquaruddinAnas-Resume.pdf" download>Download</a>
+      </div>
+    </header>
+    <main>
+      <div class="viewer">
+        <iframe src="./MohdViquaruddinAnas-Resume.pdf" title="Resume PDF"></iframe>
+      </div>
+    </main>
+  </body>
+</html>
